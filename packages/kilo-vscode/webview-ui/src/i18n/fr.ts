@@ -954,6 +954,7 @@ export const dict = {
   "session.status.retry": "Nouvelle tentative…",
   "session.status.retrying": "Nouvelle tentative (essai {{ attempt }})… {{ message }}",
   "session.status.working": "En cours…",
+  "session.status.offline": "Réseau déconnecté — reconnexion en cours...",
 
   "ui.sessionTurn.cancel": "Annuler",
   "ui.sessionTurn.status.thinking": "Réflexion...",
@@ -1088,6 +1089,14 @@ export const dict = {
     "Continuer la boucle de l'agent lorsqu'une autorisation est refusée",
   "settings.experimental.mcpTimeout.title": "Délai MCP (ms)",
   "settings.experimental.mcpTimeout.description": "Délai des requêtes du serveur MCP en millisecondes",
+  "settings.experimental.remote.title": "Contrôle Remote",
+  "settings.experimental.remote.description":
+    "Activez le contrôle Remote des sessions via Kilo Cloud. Cela affectera également les CLI sur cette machine.",
+  "settings.experimental.remote.current": "État actuel :",
+  "settings.experimental.remote.startup": "Activation automatique au démarrage :",
+  "settings.experimental.remote.active": "Actif",
+  "settings.experimental.remote.inactive": "Inactif",
+  "settings.experimental.remote.hint": "Utilisez /remote dans le chat pour basculer",
   "settings.experimental.toolToggles": "Commutateurs d'outils",
   "settings.agentBehaviour.defaultAgent.title": "Agent par défaut",
   "settings.agentBehaviour.defaultAgent.description": "Agent à utiliser lorsqu'aucun n'est spécifié",
@@ -1272,6 +1281,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Petit modèle",
   "settings.providers.smallModel.description":
     "Modèle léger pour la génération de titres, de messages de commit, l'amélioration de prompts et d'autres tâches rapides",
+  "settings.providers.subagentModel.title": "Modèle du sous-agent",
+  "settings.providers.subagentModel.description":
+    "Modèle par défaut pour les sous-agents. S'il n'est pas défini, les sous-agents héritent du modèle de l'agent parent",
+  "settings.providers.subagentModel.inherit": "Hériter de l'agent parent",
   "settings.providers.disabled": "Fournisseurs désactivés",
   "settings.providers.disabled.description": "Fournisseurs à masquer de la liste",
   "settings.providers.enabled": "Fournisseurs activés (liste blanche)",

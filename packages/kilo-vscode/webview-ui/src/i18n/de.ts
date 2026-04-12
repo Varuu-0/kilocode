@@ -952,6 +952,7 @@ export const dict = {
   "session.status.retry": "Erneuter Versuch…",
   "session.status.retrying": "Erneuter Versuch ({{ attempt }})… {{ message }}",
   "session.status.working": "Wird bearbeitet…",
+  "session.status.offline": "Netzwerk getrennt — Verbindung wird wiederhergestellt...",
 
   "ui.sessionTurn.cancel": "Abbrechen",
   "ui.sessionTurn.status.thinking": "Denke nach...",
@@ -1086,6 +1087,14 @@ export const dict = {
     "Agent-Schleife fortsetzen, wenn eine Berechtigung abgelehnt wird",
   "settings.experimental.mcpTimeout.title": "MCP-Zeitlimit (ms)",
   "settings.experimental.mcpTimeout.description": "Zeitlimit für MCP-Server-Anfragen in Millisekunden",
+  "settings.experimental.remote.title": "Remote-Steuerung",
+  "settings.experimental.remote.description":
+    "Aktivieren Sie die Remote-Steuerung von Sitzungen über Kilo Cloud. Dies betrifft auch CLIs auf diesem Computer.",
+  "settings.experimental.remote.current": "Aktueller Status:",
+  "settings.experimental.remote.startup": "Automatisch beim Start aktivieren:",
+  "settings.experimental.remote.active": "Aktiv",
+  "settings.experimental.remote.inactive": "Inaktiv",
+  "settings.experimental.remote.hint": "Verwende /remote im Chat zum Umschalten",
   "settings.experimental.toolToggles": "Werkzeug-Schalter",
   "settings.agentBehaviour.defaultAgent.title": "Standard-Agent",
   "settings.agentBehaviour.defaultAgent.description": "Agent, der verwendet wird, wenn keiner angegeben ist",
@@ -1267,6 +1276,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Kleines Modell",
   "settings.providers.smallModel.description":
     "Leichtgewichtiges Modell für Titelgenerierung, Commit-Nachrichten, Prompt-Verbesserung und andere schnelle Aufgaben",
+  "settings.providers.subagentModel.title": "Subagenten-Modell",
+  "settings.providers.subagentModel.description":
+    "Standardmodell für Subagenten. Wenn nicht festgelegt, erben Subagenten das Modell des übergeordneten Agenten",
+  "settings.providers.subagentModel.inherit": "Vom übergeordneten Agenten erben",
   "settings.providers.disabled": "Deaktivierte Anbieter",
   "settings.providers.disabled.description": "Anbieter aus der Anbieterliste ausblenden",
   "settings.providers.enabled": "Aktivierte Anbieter (Whitelist)",

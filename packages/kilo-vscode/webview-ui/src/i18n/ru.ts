@@ -947,6 +947,7 @@ export const dict = {
   "session.status.retry": "Повторная попытка…",
   "session.status.retrying": "Повторная попытка ({{ attempt }})… {{ message }}",
   "session.status.working": "Работаю…",
+  "session.status.offline": "Сеть отключена — переподключение...",
 
   "ui.sessionTurn.cancel": "Отмена",
   "ui.sessionTurn.status.thinking": "Думаю...",
@@ -1072,6 +1073,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Продолжить цикл агента при отказе в разрешении",
   "settings.experimental.mcpTimeout.title": "Таймаут MCP (мс)",
   "settings.experimental.mcpTimeout.description": "Таймаут запросов MCP-сервера в миллисекундах",
+  "settings.experimental.remote.title": "Управление Remote",
+  "settings.experimental.remote.description":
+    "Включите управление Remote сеансами через Kilo Cloud. Это также повлияет на CLI на этом компьютере.",
+  "settings.experimental.remote.current": "Текущее состояние:",
+  "settings.experimental.remote.startup": "Автоматически включать при запуске:",
+  "settings.experimental.remote.active": "Активно",
+  "settings.experimental.remote.inactive": "Неактивно",
+  "settings.experimental.remote.hint": "Используйте /remote в чате для переключения",
   "settings.experimental.toolToggles": "Переключатели инструментов",
   "settings.agentBehaviour.defaultAgent.title": "Агент по умолчанию",
   "settings.agentBehaviour.defaultAgent.description": "Агент при отсутствии указания",
@@ -1250,6 +1259,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Малая модель",
   "settings.providers.smallModel.description":
     "Лёгкая модель для генерации заголовков, сообщений коммитов, улучшения промптов и других быстрых задач",
+  "settings.providers.subagentModel.title": "Модель субагента",
+  "settings.providers.subagentModel.description":
+    "Модель по умолчанию для субагентов. Если не задано, субагенты наследуют модель родительского агента",
+  "settings.providers.subagentModel.inherit": "Унаследовать от родительского агента",
   "settings.providers.disabled": "Отключённые провайдеры",
   "settings.providers.disabled.description": "Провайдеры для скрытия из списка",
   "settings.providers.enabled": "Включённые провайдеры (белый список)",

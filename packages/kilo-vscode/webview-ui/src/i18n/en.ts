@@ -940,6 +940,7 @@ export const dict = {
   "session.status.retry": "Retrying…",
   "session.status.retrying": "Retrying (attempt {{ attempt }})… {{ message }}",
   "session.status.working": "Working...",
+  "session.status.offline": "Network disconnected — reconnecting...",
 
   "ui.sessionTurn.cancel": "Cancel",
   "ui.sessionTurn.status.thinking": "Thinking...",
@@ -1067,6 +1068,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Continue the agent loop when a permission is denied",
   "settings.experimental.mcpTimeout.title": "MCP Timeout (ms)",
   "settings.experimental.mcpTimeout.description": "Timeout for MCP server requests in milliseconds",
+  "settings.experimental.remote.title": "Remote Control",
+  "settings.experimental.remote.description":
+    "Enable remote control of sessions via Kilo Cloud. This will also affect CLIs on this machine.",
+  "settings.experimental.remote.current": "Current state:",
+  "settings.experimental.remote.startup": "Auto-enable on startup:",
+  "settings.experimental.remote.active": "Active",
+  "settings.experimental.remote.inactive": "Inactive",
+  "settings.experimental.remote.hint": "Use /remote in chat to toggle",
   "settings.experimental.toolToggles": "Tool Toggles",
 
   "settings.agentBehaviour.defaultAgent.title": "Default Agent",
@@ -1244,6 +1253,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Small Model",
   "settings.providers.smallModel.description":
     "Lightweight model for title generation, commit message generation, prompt enhancement, and other quick tasks",
+  "settings.providers.subagentModel.title": "Subagent Model",
+  "settings.providers.subagentModel.description":
+    "Default model for subagents. If not set, subagents inherit the parent agent's model",
+  "settings.providers.subagentModel.inherit": "Inherit from parent agent",
   "settings.providers.modeModels": "Model per Mode",
   "settings.providers.modeModels.description":
     "Override the default model for specific modes. If not set, the global default model is used.",

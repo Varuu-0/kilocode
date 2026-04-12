@@ -939,6 +939,7 @@ export const dict = {
   "session.status.retry": "재시도 중…",
   "session.status.retrying": "재시도 중 ({{ attempt }}번째 시도)… {{ message }}",
   "session.status.working": "작업 중...",
+  "session.status.offline": "네트워크 연결 끊김 — 다시 연결 중...",
 
   "ui.sessionTurn.cancel": "취소",
   "ui.sessionTurn.status.thinking": "생각 중...",
@@ -1063,6 +1064,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "권한이 거부되면 에이전트 루프 계속",
   "settings.experimental.mcpTimeout.title": "MCP 타임아웃 (ms)",
   "settings.experimental.mcpTimeout.description": "MCP 서버 요청의 타임아웃 시간 (밀리초)",
+  "settings.experimental.remote.title": "Remote 제어",
+  "settings.experimental.remote.description":
+    "Kilo Cloud를 통한 세션의 Remote 제어를 활성화합니다. 이는 이 컴퓨터의 CLI에도 영향을 미칩니다.",
+  "settings.experimental.remote.current": "현재 상태:",
+  "settings.experimental.remote.startup": "시작 시 자동 활성화:",
+  "settings.experimental.remote.active": "활성",
+  "settings.experimental.remote.inactive": "비활성",
+  "settings.experimental.remote.hint": "채팅에서 /remote를 사용하여 전환하세요",
   "settings.experimental.toolToggles": "도구 토글",
   "settings.agentBehaviour.defaultAgent.title": "기본 에이전트",
   "settings.agentBehaviour.defaultAgent.description": "지정되지 않은 경우 사용할 에이전트",
@@ -1230,6 +1239,10 @@ export const dict = {
   "settings.providers.smallModel.title": "소형 모델",
   "settings.providers.smallModel.description":
     "제목 생성, 커밋 메시지 생성, 프롬프트 개선 및 기타 빠른 작업을 위한 경량 모델",
+  "settings.providers.subagentModel.title": "하위 에이전트 모델",
+  "settings.providers.subagentModel.description":
+    "하위 에이전트의 기본 모델입니다. 설정되지 않은 경우 하위 에이전트는 상위 에이전트의 모델을 상속받습니다.",
+  "settings.providers.subagentModel.inherit": "상위 에이전트에서 상속",
   "settings.providers.disabled": "비활성화된 공급자",
   "settings.providers.disabled.description": "공급자 목록에서 숨길 공급자",
   "settings.providers.enabled": "활성화된 공급자 (허용 목록)",

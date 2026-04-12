@@ -948,6 +948,7 @@ export const dict = {
   "session.status.retry": "Reintentando…",
   "session.status.retrying": "Reintentando (intento {{ attempt }})… {{ message }}",
   "session.status.working": "Trabajando…",
+  "session.status.offline": "Red desconectada — reconectando...",
 
   "ui.sessionTurn.cancel": "Cancelar",
   "ui.sessionTurn.status.thinking": "Pensando...",
@@ -1077,6 +1078,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Continuar el bucle del agente cuando se deniega un permiso",
   "settings.experimental.mcpTimeout.title": "Tiempo de espera MCP (ms)",
   "settings.experimental.mcpTimeout.description": "Tiempo de espera para solicitudes del servidor MCP en milisegundos",
+  "settings.experimental.remote.title": "Control Remote",
+  "settings.experimental.remote.description":
+    "Habilite el control Remote de las sesiones a través de Kilo Cloud. Esto también afectará a las CLI de este equipo.",
+  "settings.experimental.remote.current": "Estado actual:",
+  "settings.experimental.remote.startup": "Activar automáticamente al inicio:",
+  "settings.experimental.remote.active": "Activo",
+  "settings.experimental.remote.inactive": "Inactivo",
+  "settings.experimental.remote.hint": "Usa /remote en el chat para alternar",
   "settings.experimental.toolToggles": "Interruptores de herramientas",
   "settings.agentBehaviour.defaultAgent.title": "Agente predeterminado",
   "settings.agentBehaviour.defaultAgent.description": "Agente a usar cuando no se especifica ninguno",
@@ -1259,6 +1268,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Modelo pequeño",
   "settings.providers.smallModel.description":
     "Modelo ligero para generación de títulos, mensajes de commit, mejora de prompts y otras tareas rápidas",
+  "settings.providers.subagentModel.title": "Modelo del subagente",
+  "settings.providers.subagentModel.description":
+    "Modelo predeterminado para subagentes. Si no se establece, los subagentes heredan el modelo del agente principal",
+  "settings.providers.subagentModel.inherit": "Heredar del agente principal",
   "settings.providers.disabled": "Proveedores deshabilitados",
   "settings.providers.disabled.description": "Proveedores a ocultar de la lista de proveedores",
   "settings.providers.enabled": "Proveedores habilitados (lista blanca)",

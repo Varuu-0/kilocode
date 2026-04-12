@@ -944,6 +944,7 @@ export const dict = {
   "session.status.retry": "Prøver på nytt…",
   "session.status.retrying": "Prøver på nytt (forsøk {{ attempt }})… {{ message }}",
   "session.status.working": "Arbeider…",
+  "session.status.offline": "Nettverk frakoblet — kobler til på nytt...",
 
   "ui.sessionTurn.cancel": "Avbryt",
   "ui.sessionTurn.status.thinking": "Tenker...",
@@ -1069,6 +1070,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Fortsett agentløkken når en tillatelse avvises",
   "settings.experimental.mcpTimeout.title": "MCP-tidsavbrudd (ms)",
   "settings.experimental.mcpTimeout.description": "Tidsavbrudd for MCP-serverforespørsler i millisekunder",
+  "settings.experimental.remote.title": "Remote-kontroll",
+  "settings.experimental.remote.description":
+    "Aktiver Remote-kontroll av økter via Kilo Cloud. Dette vil også påvirke CLI-er på denne maskinen.",
+  "settings.experimental.remote.current": "Nåværende status:",
+  "settings.experimental.remote.startup": "Aktiver automatisk ved oppstart:",
+  "settings.experimental.remote.active": "Aktiv",
+  "settings.experimental.remote.inactive": "Inaktiv",
+  "settings.experimental.remote.hint": "Bruk /remote i chatten for å veksle",
   "settings.experimental.toolToggles": "Verktøybrytere",
   "settings.agentBehaviour.defaultAgent.title": "Standardagent",
   "settings.agentBehaviour.defaultAgent.description": "Agent å bruke når ingen er angitt",
@@ -1243,6 +1252,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Liten modell",
   "settings.providers.smallModel.description":
     "Lettvektsmodell for titelgenerering, generering av commit-meldinger, prompt-forbedring og andre raske oppgaver",
+  "settings.providers.subagentModel.title": "Underagentmodell",
+  "settings.providers.subagentModel.description":
+    "Standardmodell for underagenter. Hvis den ikke er satt, arver underagenter foreldreagentens modell",
+  "settings.providers.subagentModel.inherit": "Arv fra foreldreagent",
   "settings.providers.disabled": "Deaktiverte leverandører",
   "settings.providers.disabled.description": "Leverandører å skjule fra listen",
   "settings.providers.enabled": "Aktiverte leverandører (hvitliste)",

@@ -944,6 +944,7 @@ export const dict = {
   "session.status.retry": "Повторна спроба…",
   "session.status.retrying": "Повторна спроба (спроба {{ attempt }})… {{ message }}",
   "session.status.working": "Працює...",
+  "session.status.offline": "Мережу відключено — перепідключення...",
 
   "ui.sessionTurn.cancel": "Скасувати",
   "ui.sessionTurn.status.thinking": "Думаю...",
@@ -1075,6 +1076,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Продовжувати цикл агента, коли дозвіл відхилено",
   "settings.experimental.mcpTimeout.title": "Тайм-аут MCP (мс)",
   "settings.experimental.mcpTimeout.description": "Тайм-аут у мілісекундах для запитів до MCP-сервера",
+  "settings.experimental.remote.title": "Керування Remote",
+  "settings.experimental.remote.description":
+    "Увімкніть керування Remote сеансами через Kilo Cloud. Це також вплине на CLI на цьому комп'ютері.",
+  "settings.experimental.remote.current": "Поточний стан:",
+  "settings.experimental.remote.startup": "Автоматичне ввімкнення під час запуску:",
+  "settings.experimental.remote.active": "Активний",
+  "settings.experimental.remote.inactive": "Неактивний",
+  "settings.experimental.remote.hint": "Використовуйте /remote у чаті для перемикання",
   "settings.experimental.toolToggles": "Перемикачі інструментів",
 
   "settings.agentBehaviour.defaultAgent.title": "Агент за замовчуванням",
@@ -1221,6 +1230,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Мала модель",
   "settings.providers.smallModel.description":
     "Легка модель для генерації заголовків, повідомлень комітів, покращення запитів та інших швидких завдань",
+  "settings.providers.subagentModel.title": "Модель субагента",
+  "settings.providers.subagentModel.description":
+    "Модель за замовчуванням для субагентів. Якщо не встановлено, субагенти успадковують модель батьківського агента",
+  "settings.providers.subagentModel.inherit": "Успадкувати від батьківського агента",
   "settings.providers.modeModels": "Модель для кожного режиму",
   "settings.providers.modeModels.description":
     "Перевизначити стандартну модель для певних режимів. Якщо не встановлено, використовується загальна стандартна модель.",

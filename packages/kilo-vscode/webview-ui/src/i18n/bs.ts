@@ -947,6 +947,7 @@ export const dict = {
   "session.status.retry": "Ponovni pokušaj…",
   "session.status.retrying": "Ponovni pokušaj (pokušaj {{ attempt }})… {{ message }}",
   "session.status.working": "Radim…",
+  "session.status.offline": "Mreža prekinuta — ponovno povezivanje...",
 
   "ui.sessionTurn.cancel": "Otkaži",
   "ui.sessionTurn.status.thinking": "Razmišljam...",
@@ -1072,6 +1073,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Nastavi petlju agenta kada je dozvola odbijena",
   "settings.experimental.mcpTimeout.title": "MCP istek vremena (ms)",
   "settings.experimental.mcpTimeout.description": "Istek vremena za MCP server zahtjeve u milisekundama",
+  "settings.experimental.remote.title": "Remote kontrola",
+  "settings.experimental.remote.description":
+    "Omogućite Remote kontrolu sesija putem Kilo Cloud. Ovo će također utjecati na CLI-jeve na ovoj mašini.",
+  "settings.experimental.remote.current": "Trenutno stanje:",
+  "settings.experimental.remote.startup": "Automatsko uključivanje pri pokretanju:",
+  "settings.experimental.remote.active": "Aktivno",
+  "settings.experimental.remote.inactive": "Neaktivno",
+  "settings.experimental.remote.hint": "Koristite /remote u chatu za prebacivanje",
   "settings.experimental.toolToggles": "Prekidači alata",
   "settings.agentBehaviour.defaultAgent.title": "Zadani agent",
   "settings.agentBehaviour.defaultAgent.description": "Agent koji se koristi kada nijedan nije naveden",
@@ -1251,6 +1260,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Mali model",
   "settings.providers.smallModel.description":
     "Lagani model za generiranje naslova, commit poruka, poboljšanje promptova i druge brze zadatke",
+  "settings.providers.subagentModel.title": "Model podagenta",
+  "settings.providers.subagentModel.description":
+    "Zadani model za podagente. Ako nije postavljen, podagenti nasljeđuju model nadređenog agenta",
+  "settings.providers.subagentModel.inherit": "Naslijedi od nadređenog agenta",
   "settings.providers.disabled": "Onemogućeni pružatelji",
   "settings.providers.disabled.description": "Pružatelji za skrivanje s popisa",
   "settings.providers.enabled": "Omogućeni pružatelji (bijela lista)",

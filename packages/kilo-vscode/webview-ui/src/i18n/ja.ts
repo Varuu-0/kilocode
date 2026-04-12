@@ -939,6 +939,7 @@ export const dict = {
   "session.status.retry": "再試行中…",
   "session.status.retrying": "再試行中（{{ attempt }}回目）… {{ message }}",
   "session.status.working": "作業中…",
+  "session.status.offline": "ネットワークが切断されました — 再接続中…",
 
   "ui.sessionTurn.cancel": "キャンセル",
   "ui.sessionTurn.status.thinking": "考え中...",
@@ -1066,6 +1067,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "権限が拒否された場合にエージェントループを続行",
   "settings.experimental.mcpTimeout.title": "MCPタイムアウト（ミリ秒）",
   "settings.experimental.mcpTimeout.description": "MCPサーバーリクエストのタイムアウト（ミリ秒）",
+  "settings.experimental.remote.title": "Remote コントロール",
+  "settings.experimental.remote.description":
+    "Kilo Cloud 経由でのセッションの Remote コントロールを有効にします。これはこのマシンの CLI にも影響します。",
+  "settings.experimental.remote.current": "現在の状態:",
+  "settings.experimental.remote.startup": "起動時の自動有効化:",
+  "settings.experimental.remote.active": "アクティブ",
+  "settings.experimental.remote.inactive": "非アクティブ",
+  "settings.experimental.remote.hint": "チャットで /remote を使用して切り替えます",
   "settings.experimental.toolToggles": "ツールトグル",
   "settings.agentBehaviour.defaultAgent.title": "デフォルトエージェント",
   "settings.agentBehaviour.defaultAgent.description": "指定されていない場合に使用するエージェント",
@@ -1242,6 +1251,10 @@ export const dict = {
   "settings.providers.smallModel.title": "小型モデル",
   "settings.providers.smallModel.description":
     "タイトル生成、コミットメッセージ生成、プロンプト改善、およびその他の高速タスク用の軽量モデル",
+  "settings.providers.subagentModel.title": "サブエージェントモデル",
+  "settings.providers.subagentModel.description":
+    "サブエージェントのデフォルトモデル。設定されていない場合、サブエージェントは親エージェントのモデルを継承します",
+  "settings.providers.subagentModel.inherit": "親エージェントから継承",
   "settings.providers.disabled": "無効化されたプロバイダー",
   "settings.providers.disabled.description": "プロバイダーリストから非表示にするプロバイダー",
   "settings.providers.enabled": "有効化されたプロバイダー（ホワイトリスト）",

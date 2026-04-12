@@ -944,6 +944,7 @@ export const dict = {
   "session.status.retry": "Ponawianie…",
   "session.status.retrying": "Ponawiam próbę ({{ attempt }})… {{ message }}",
   "session.status.working": "Pracuję…",
+  "session.status.offline": "Odłączono od sieci — ponowne łączenie...",
 
   "ui.sessionTurn.cancel": "Anuluj",
   "ui.sessionTurn.status.thinking": "Myślę...",
@@ -1070,6 +1071,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Kontynuuj pętlę agenta po odmowie uprawnienia",
   "settings.experimental.mcpTimeout.title": "Limit czasu MCP (ms)",
   "settings.experimental.mcpTimeout.description": "Limit czasu żądań serwera MCP w milisekundach",
+  "settings.experimental.remote.title": "Sterowanie Remote",
+  "settings.experimental.remote.description":
+    "Włącz sterowanie Remote sesjami za pośrednictwem Kilo Cloud. Wpłynie to również na CLI na tej maszynie.",
+  "settings.experimental.remote.current": "Aktualny stan:",
+  "settings.experimental.remote.startup": "Automatyczne włączanie przy starcie:",
+  "settings.experimental.remote.active": "Aktywny",
+  "settings.experimental.remote.inactive": "Nieaktywny",
+  "settings.experimental.remote.hint": "Użyj /remote na czacie, aby przełączyć",
   "settings.experimental.toolToggles": "Przełączniki narzędzi",
   "settings.agentBehaviour.defaultAgent.title": "Domyślny agent",
   "settings.agentBehaviour.defaultAgent.description": "Agent używany, gdy żaden nie jest określony",
@@ -1251,6 +1260,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Mały model",
   "settings.providers.smallModel.description":
     "Lekki model do generowania tytułów, wiadomości commitów, ulepszania zapytań i innych szybkich zadań",
+  "settings.providers.subagentModel.title": "Model podagenta",
+  "settings.providers.subagentModel.description":
+    "Domyślny model dla podagentów. Jeśli nie ustawiono, podagenci dziedziczą model agenta nadrzędnego",
+  "settings.providers.subagentModel.inherit": "Dziedzicz po agencie nadrzędnym",
   "settings.providers.disabled": "Wyłączeni dostawcy",
   "settings.providers.disabled.description": "Dostawcy do ukrycia z listy",
   "settings.providers.enabled": "Włączeni dostawcy (biała lista)",

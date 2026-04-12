@@ -940,6 +940,7 @@ export const dict = {
   "session.status.retry": "Prøver igen…",
   "session.status.retrying": "Prøver igen (forsøg {{ attempt }})… {{ message }}",
   "session.status.working": "Arbejder…",
+  "session.status.offline": "Netværk afbrudt — genopretter forbindelse...",
 
   "ui.sessionTurn.cancel": "Annuller",
   "ui.sessionTurn.status.thinking": "Tænker...",
@@ -1066,6 +1067,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "Fortsæt agentløkken, når en tilladelse afvises",
   "settings.experimental.mcpTimeout.title": "MCP-timeout (ms)",
   "settings.experimental.mcpTimeout.description": "Timeout for MCP-serveranmodninger i millisekunder",
+  "settings.experimental.remote.title": "Remote-styring",
+  "settings.experimental.remote.description":
+    "Aktivér Remote-styring af sessioner via Kilo Cloud. Dette vil også påvirke CLI'er på denne maskine.",
+  "settings.experimental.remote.current": "Nuværende status:",
+  "settings.experimental.remote.startup": "Aktivér automatisk ved opstart:",
+  "settings.experimental.remote.active": "Aktiv",
+  "settings.experimental.remote.inactive": "Inaktiv",
+  "settings.experimental.remote.hint": "Brug /remote i chatten for at skifte",
   "settings.experimental.toolToggles": "Værktøjsskift",
   "settings.agentBehaviour.defaultAgent.title": "Standardagent",
   "settings.agentBehaviour.defaultAgent.description": "Agent til brug, når ingen er angivet",
@@ -1241,6 +1250,10 @@ export const dict = {
   "settings.providers.smallModel.title": "Lille model",
   "settings.providers.smallModel.description":
     "Letvægtsmodel til titelgenerering, generering af commit-beskeder, prompt-forbedring og andre hurtige opgaver",
+  "settings.providers.subagentModel.title": "Subagent-model",
+  "settings.providers.subagentModel.description":
+    "Standardmodel for subagenter. Hvis ikke indstillet, arver subagenter den overordnede agents model",
+  "settings.providers.subagentModel.inherit": "Arv fra overordnet agent",
   "settings.providers.disabled": "Deaktiverede udbydere",
   "settings.providers.disabled.description": "Udbydere at skjule fra listen",
   "settings.providers.enabled": "Aktiverede udbydere (hvidliste)",

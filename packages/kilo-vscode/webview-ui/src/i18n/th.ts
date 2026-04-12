@@ -935,6 +935,7 @@ export const dict = {
   "session.status.retry": "กำลังลองใหม่…",
   "session.status.retrying": "กำลังลองใหม่ (ครั้งที่ {{ attempt }})… {{ message }}",
   "session.status.working": "กำลังทำงาน...",
+  "session.status.offline": "เครือข่ายถูกตัดการเชื่อมต่อ — กำลังเชื่อมต่อใหม่...",
 
   "ui.sessionTurn.cancel": "ยกเลิก",
   "ui.sessionTurn.status.thinking": "กำลังคิด...",
@@ -1058,6 +1059,14 @@ export const dict = {
   "settings.experimental.continueOnDeny.description": "ดำเนินลูปเอเจนต์ต่อเมื่อสิทธิ์ถูกปฏิเสธ",
   "settings.experimental.mcpTimeout.title": "หมดเวลา MCP (มิลลิวินาที)",
   "settings.experimental.mcpTimeout.description": "หมดเวลาสำหรับคำขอเซิร์ฟเวอร์ MCP เป็นมิลลิวินาที",
+  "settings.experimental.remote.title": "การควบคุม Remote",
+  "settings.experimental.remote.description":
+    "เปิดใช้งานการควบคุม Remote ของเซสชันผ่าน Kilo Cloud ซึ่งจะส่งผลต่อ CLI บนเครื่องนี้ด้วย",
+  "settings.experimental.remote.current": "สถานะปัจจุบัน:",
+  "settings.experimental.remote.startup": "เปิดใช้งานอัตโนมัติเมื่อเริ่มต้น:",
+  "settings.experimental.remote.active": "เปิดใช้งาน",
+  "settings.experimental.remote.inactive": "ปิดใช้งาน",
+  "settings.experimental.remote.hint": "ใช้ /remote ในแชทเพื่อสลับสถานะ",
   "settings.experimental.toolToggles": "สวิตช์เครื่องมือ",
   "settings.agentBehaviour.defaultAgent.title": "เอเจนต์เริ่มต้น",
   "settings.agentBehaviour.defaultAgent.description": "เอเจนต์ที่ใช้เมื่อไม่ได้ระบุ",
@@ -1226,6 +1235,10 @@ export const dict = {
   "settings.providers.smallModel.title": "โมเดลขนาดเล็ก",
   "settings.providers.smallModel.description":
     "โมเดลน้ำหนักเบาสำหรับสร้างชื่อ สร้างข้อความคอมมิต ปรับปรุงพรอมต์ และงานด่วนอื่นๆ",
+  "settings.providers.subagentModel.title": "โมเดลตัวแทนย่อย",
+  "settings.providers.subagentModel.description":
+    "โมเดลเริ่มต้นสำหรับตัวแทนย่อย หากไม่ได้ตั้งค่า ตัวแทนย่อยจะสืบทอดโมเดลจากตัวแทนหลัก",
+  "settings.providers.subagentModel.inherit": "สืบทอดจากตัวแทนหลัก",
   "settings.providers.disabled": "ผู้ให้บริการที่ปิดใช้งาน",
   "settings.providers.disabled.description": "ผู้ให้บริการที่จะซ่อนจากรายการ",
   "settings.providers.enabled": "ผู้ให้บริการที่เปิดใช้งาน (รายการที่อนุญาต)",
