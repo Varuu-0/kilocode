@@ -1,8 +1,10 @@
 import z from "zod"
 import { Effect, Scope } from "effect"
+import { createReadStream } from "fs"
 import { open } from "fs/promises"
 import * as path from "path"
 import { Readable } from "stream" // kilocode_change
+import iconv from "iconv-lite"
 import { createInterface } from "readline"
 import * as Tool from "./tool"
 import { AppFileSystem } from "@opencode-ai/shared/filesystem"
@@ -235,9 +237,10 @@ export const ReadTool = Tool.define(
 // kilocode_change start
 export async function lines(filepath: string, opts: { limit: number; offset: number }) {
   // kilocode_change end
-  // kilocode_change start - decode with detected encoding; replaces createReadStream(filepath, { encoding: "utf8" })
-  const encoded = await Encoding.read(filepath)
-  const stream = Readable.from([encoded.text])
+  // kilocode_change start - stream with detected encoding
+  const { encoding } = await Encoding.analyze(filepath)
+  const actualEncoding = encoding === Encoding.UTF8_BOM ? "utf-8" : encoding
+  const stream = createReadStream(filepath).pipe(iconv.decodeStream(actualEncoding))
   // kilocode_change end
   const rl = createInterface({
     input: stream,

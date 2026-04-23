@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from "fs/promises"
+import { readFile, writeFile, mkdir, open } from "fs/promises"
 import { readFileSync } from "fs"
 import { dirname } from "path"
 import jschardet from "jschardet"
@@ -125,6 +125,18 @@ export namespace Encoding {
     const bytes = await readFile(path)
     const encoding = detect(bytes)
     return { text: decode(bytes, encoding), encoding }
+  }
+
+  /** Detect encoding from the first few KB of a file. */
+  export async function analyze(path: string): Promise<{ encoding: string }> {
+    const fh = await open(path, "r")
+    try {
+      const bytes = Buffer.alloc(4096)
+      const { bytesRead } = await fh.read(bytes, 0, 4096, 0)
+      return { encoding: detect(bytes.subarray(0, bytesRead)) }
+    } finally {
+      await fh.close()
+    }
   }
 
   /** Synchronous read, detecting encoding. */
